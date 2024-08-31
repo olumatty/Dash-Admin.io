@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BsFillBellFill,
   BsJustify,
@@ -6,12 +7,12 @@ import {
   BsPersonCircle,
 } from "react-icons/bs";
 
-const Header = () => {
+const Header = ({Opensidebar}) => {
   return (
     <header className="header">
       <div className="menu-icon">
-        <BsJustify className="icon" />
-      </div>
+        <BsJustify className="icon" onClick={Opensidebar} />
+      </div> 
       <div className="header-left">
         <BsSearch className="icon" />
       </div>
